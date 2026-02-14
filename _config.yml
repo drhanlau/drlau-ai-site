@@ -1,7 +1,7 @@
 title: "Dr. Lau Cher Han"
 description: "AI Expert, Educator & Technology Leader"
-url: "https://drhanlau.github.io"
-baseurl: "/drlau-ai-site"
+url: ""
+baseurl: ""
 
 permalink: /blog/:title/
 future: true
