@@ -26,7 +26,7 @@ title: Media Appearances
             <iframe src="https://www.youtube.com/embed/MC4diKlO5ak" title="Dr. Lau on Astro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
-        <a href="/astro" class="btn btn-outline" style="margin-top: 1.25rem;">View All Astro Appearances &rarr;</a>
+        <a href="{{ '/astro' | relative_url }}" class="btn btn-outline" style="margin-top: 1.25rem;">View All Astro Appearances &rarr;</a>
       </div>
       <div class="media-item reveal">
         <div class="media-name">AiFM</div>
@@ -44,12 +44,12 @@ title: Media Appearances
         <div class="media-name">China Press</div>
         <div class="media-desc">Regular columnist writing on technology, AI, and education</div>
         <div class="media-clippings">
-          <a href="/chinapress/xun-qin-ji-de-AI-yi-han" class="media-clipping">
-            <img src="/assets/images/chinapress-column.jpg" alt="尋秦記的AI遺憾">
+          <a href="{{ '/chinapress/xun-qin-ji-de-AI-yi-han' | relative_url }}" class="media-clipping">
+            <img src="{{ '/assets/images/chinapress-column.jpg' | relative_url }}" alt="尋秦記的AI遺憾">
             <span class="clipping-title">尋秦記的AI遺憾</span>
           </a>
-          <a href="/chinapress/ai-de-zhi-sheng-zhi-dao" class="media-clipping">
-            <img src="/assets/images/chinapress-peng-zi-mo-hu.jpg" alt="AI 的致勝之道：碰，自摸，胡">
+          <a href="{{ '/chinapress/ai-de-zhi-sheng-zhi-dao' | relative_url }}" class="media-clipping">
+            <img src="{{ '/assets/images/chinapress-peng-zi-mo-hu.jpg' | relative_url }}" alt="AI 的致勝之道：碰，自摸，胡">
             <span class="clipping-title">AI 的致勝之道：碰，自摸，胡</span>
           </a>
         </div>

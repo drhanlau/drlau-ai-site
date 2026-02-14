@@ -11,7 +11,7 @@ permalink: /chinapress/ai-de-zhi-sheng-zhi-dao/
 
     <div class="article-content animate-fade-up delay-2">
       <div class="article-image">
-        <img src="/assets/images/chinapress-peng-zi-mo-hu.jpg" alt="Dr. Lau Cher Han's China Press column — AI 的致勝之道">
+        <img src="{{ '/assets/images/chinapress-peng-zi-mo-hu.jpg' | relative_url }}" alt="Dr. Lau Cher Han's China Press column — AI 的致勝之道">
       </div>
 
       <div class="article-body">

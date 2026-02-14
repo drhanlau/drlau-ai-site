@@ -11,7 +11,7 @@ permalink: /chinapress/xun-qin-ji-de-AI-yi-han/
 
     <div class="article-content animate-fade-up delay-2">
       <div class="article-image">
-        <img src="/assets/images/chinapress-column.jpg" alt="Dr. Lau Cher Han's China Press column">
+        <img src="{{ '/assets/images/chinapress-column.jpg' | relative_url }}" alt="Dr. Lau Cher Han's China Press column">
       </div>
 
       <div class="article-body">
