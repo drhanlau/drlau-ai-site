@@ -1,0 +1,29 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <ul class="footer-links">
+      <li><a href="{{ '/about' | relative_url }}">About</a></li>
+      <li><a href="{{ '/media' | relative_url }}">Media</a></li>
+      <li><a href="{{ '/speaking' | relative_url }}">Speaking</a></li>
+      <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+      <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+    </ul>
+    <p>&copy; {{ 'now' | date: "%Y" }} Dr. Lau Cher Han. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  reveals.forEach(function(el) {
+    observer.observe(el);
+  });
+});
+</script>

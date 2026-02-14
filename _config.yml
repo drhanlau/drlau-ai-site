@@ -1,0 +1,28 @@
+title: "Dr. Lau Cher Han"
+description: "AI Expert, Educator & Technology Leader"
+url: ""
+baseurl: ""
+
+permalink: /blog/:title/
+future: true
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

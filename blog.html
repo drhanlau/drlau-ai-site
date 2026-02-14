@@ -1,0 +1,30 @@
+---
+layout: default
+title: Blog
+---
+
+<section>
+  <div class="wrapper">
+    <p class="section-label animate-fade-up">Blog</p>
+    <h1 class="animate-fade-up delay-1">Thoughts &amp; Insights</h1>
+    <p class="animate-fade-up delay-2" style="color: var(--color-text-light); max-width: 560px; margin-bottom: 3rem;">
+      Writing about AI, machine learning, education, and the technology landscape.
+    </p>
+
+    <div class="post-list">
+      {% for post in site.posts %}
+      <div class="post-card reveal">
+        <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% if post.excerpt %}
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+
+      {% if site.posts.size == 0 %}
+      <p style="color: var(--color-text-light);">No posts yet. Check back soon!</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
