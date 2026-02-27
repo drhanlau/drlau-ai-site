@@ -28,13 +28,28 @@ title: Media Appearances
         </div>
         <a href="{{ '/astro' | relative_url }}" class="btn btn-outline" style="margin-top: 1.25rem;">View All Astro Appearances &rarr;</a>
       </div>
-      <div class="media-item reveal">
+      <div class="media-item media-item--featured reveal">
         <div class="media-name">AiFM</div>
         <div class="media-desc">Radio segments on technology, innovation, and the future of work</div>
+        <div class="media-videos">
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/JqtX_-oefHI" title="Dr. Lau on AiFM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
-      <div class="media-item reveal">
+      <div class="media-item media-item--featured reveal">
         <div class="media-name">BFM</div>
         <div class="media-desc">Business radio interviews on AI strategy and digital transformation</div>
+        <div class="media-clippings">
+          <a href="https://www.bfm.my/content/podcast/why-open-source-ai-matters-for-malaysia" class="media-clipping" target="_blank" rel="noopener">
+            <img src="{{ '/assets/images/bfm-open-source-ai.png' | relative_url }}" alt="Why Open Source AI Matters for Malaysia">
+            <span class="clipping-title">Why Open Source AI Matters for Malaysia</span>
+          </a>
+          <a href="https://www.bfm.my/content/podcast/who-owns-the-internets-data" class="media-clipping" target="_blank" rel="noopener">
+            <img src="{{ '/assets/images/bfm-who-owns-internet-data.png' | relative_url }}" alt="Who Owns the Internet's Data">
+            <span class="clipping-title">Who Owns the Internet's Data</span>
+          </a>
+        </div>
       </div>
       <div class="media-item reveal">
         <div class="media-name">Nanyang Siang Pau</div>
