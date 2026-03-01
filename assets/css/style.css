@@ -438,6 +438,10 @@ section {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.card-grid--2col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .card {
   background: var(--color-glass);
   border: 1px solid var(--color-glass-border);
@@ -804,6 +808,27 @@ section {
 }
 
 /* ===== Guide Page ===== */
+.guide-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.guide-hero__image img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.guide-content .reveal + .reveal {
+  margin-top: 6rem;
+}
+
+.guide-content h3 {
+  margin-top: 3rem;
+}
+
 .guide-content p {
   color: var(--color-text);
   margin-bottom: 1.25rem;
@@ -1086,6 +1111,20 @@ section[style*="background"] {
     justify-content: center;
   }
 
+  .guide-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .guide-hero__image {
+    order: -1;
+  }
+
+  .guide-hero__image img {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
   .about-content,
   .contact-grid {
     grid-template-columns: 1fr;
@@ -1093,6 +1132,7 @@ section[style*="background"] {
   }
 
   .card-grid,
+  .card-grid--2col,
   .card-grid--3col {
     grid-template-columns: 1fr;
   }

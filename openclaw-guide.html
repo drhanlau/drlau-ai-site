@@ -6,202 +6,218 @@ permalink: /openclaw-guide/
 
 <section>
   <div class="wrapper guide-content">
-    <p class="section-label animate-fade-up">Beginner Guide / 新手指南</p>
-    <h1 class="animate-fade-up delay-1">小白 OpenClaw 新手指南</h1>
-    <p class="animate-fade-up delay-2" style="color: var(--color-text-light); font-size: 1.05rem; max-width: 640px; margin-bottom: 3rem;">
-      零基础也能上手的 AI 私人助手 —— 从安装到日常使用，一篇搞定。
-    </p>
-
-    <!-- What is OpenClaw -->
-    <div class="reveal">
-      <h2>OpenClaw 是什么？</h2>
-      <p>
-        <strong>OpenClaw</strong> 是一个<strong>开源、本地运行</strong>的 AI 私人助手框架，由 Peter Steinberger 开发。
-        和普通聊天机器人不同，OpenClaw 能<strong>真正帮你做事</strong> —— 管邮件、排日程、抓网页数据、执行终端命令，甚至控制智能家居，而你的数据始终留在自己电脑上。
-      </p>
-      <p>简单来说：<strong>你给它一个任务，它自己去完成，而不只是回答你的问题。</strong></p>
+    <div class="guide-hero">
+      <div class="guide-hero__text">
+        <p class="section-label animate-fade-up">Beginner Guide / 新手指南</p>
+        <h1 class="animate-fade-up delay-1">小白 OpenClaw 新手指南</h1>
+        <p class="animate-fade-up delay-2"
+          style="color: var(--color-text-light); font-size: 1.05rem;">
+          零基礎也能上手的 AI 私人助手 —— 從安裝到日常使用，一篇搞定。
+        </p>
+        <div class="animate-fade-up delay-3">
+          <h2>OpenClaw 是什麼？</h2>
+          <p>
+            <strong>OpenClaw</strong> 是一個<strong>開源、本地運行</strong>的 AI 私人助手框架，由 Peter Steinberger 開發。
+          </p>
+          <p>
+            和普通聊天機器人不同，OpenClaw 能<strong>真正幫你做事</strong> —— 管郵件、排日程、抓網頁數據、執行終端命令，甚至控制智能家居，而你的數據始終留在自己電腦上。
+          </p>
+          <p>簡單來說：<strong>你給它一個任務，它自己去完成，而不只是回答你的問題。</strong></p>
+        </div>
+      </div>
+      <div class="guide-hero__image animate-fade-up delay-3">
+        <img src="{{ '/assets/images/openclaw-guide-featured.png' | relative_url }}" alt="OpenClaw 新手指南">
+      </div>
     </div>
 
     <!-- Why OpenClaw -->
-    <div class="reveal" style="margin-top: 3rem;">
-      <h2>为什么选 OpenClaw？</h2>
-      <div class="card-grid" style="margin-top: 1.5rem;">
+    <div class="reveal">
+      <h2>為什麼選 OpenClaw？</h2>
+      <div class="card-grid card-grid--2col" style="margin-top: 1.5rem;">
         <div class="card">
           <div class="card-icon">🔒</div>
-          <h3>隐私优先</h3>
-          <p>所有数据本地运行，不经过第三方服务器。你的聊天记录、文件、密码全都留在你自己的电脑上。</p>
+          <h3>隱私優先</h3>
+          <p>所有數據本地運行，不經過第三方伺服器。你的聊天記錄、檔案、密碼全都留在你自己的電腦上。</p>
         </div>
         <div class="card">
           <div class="card-icon">🤖</div>
           <h3>真正的 AI 代理</h3>
-          <p>不只是回答问题 —— 它能上网搜索、读写文件、执行命令、发消息，像一个真正的助手一样主动行动。</p>
+          <p>它能上網搜索、讀寫檔案、執行命令、發消息，像一個真正的助手一樣主動行動。不單單只是</p>
         </div>
         <div class="card">
           <div class="card-icon">💬</div>
           <h3>多平台接入</h3>
-          <p>通过 WhatsApp、Telegram、Discord、Slack、Signal、iMessage 等 50+ 平台和它对话。</p>
+          <p>透過 WhatsApp、Telegram、Discord、以及 Slack 等平台對接對話。</p>
         </div>
         <div class="card">
           <div class="card-icon">🧠</div>
-          <h3>持久记忆</h3>
-          <p>它会记住你的偏好和习惯，用得越久越懂你。不像普通 AI 每次聊天都从零开始。</p>
+          <h3>持久記憶</h3>
+          <p>它會記住你的偏好和習慣，用得越久越懂你。不像普通 AI 每次聊天都從零開始。</p>
         </div>
       </div>
     </div>
 
     <!-- Requirements -->
-    <div class="reveal" style="margin-top: 3rem;">
-      <h2>开始之前你需要准备</h2>
+    <div class="reveal">
+      <h2>事前準備</h2>
       <ul>
-        <li><strong>电脑：</strong>macOS、Windows 或 Linux 都可以（推荐 8GB 内存以上）</li>
-        <li><strong>网络：</strong>需要联网下载安装包和调用 AI 模型</li>
-        <li><strong>AI API Key：</strong>注册 <a href="https://console.anthropic.com/" target="_blank">Anthropic（Claude）</a> 或 <a href="https://platform.openai.com/" target="_blank">OpenAI（GPT）</a> 获取 API Key</li>
-        <li><strong>通讯软件（可选）：</strong>Telegram 或 WhatsApp 账号，用来远程和 AI 对话</li>
+        <li><strong>電腦：</strong>macOS、Windows 或 Linux 都可以（推薦 8GB 記憶體以上）</li>
+        <li><strong>網路：</strong>需要連網下載安裝包和呼叫 AI 模型</li>
+        <li><strong>AI API Key：</strong>註冊 <a href="https://console.anthropic.com/"
+            target="_blank">Anthropic（Claude）</a> 或 <a href="https://platform.openai.com/"
+            target="_blank">OpenAI（GPT）</a> 取得 API Key</li>
+        <li><strong>通訊軟體（可選）：</strong>Telegram 或 WhatsApp 帳號，用來遠程和 AI 對話</li>
       </ul>
     </div>
 
     <!-- Installation -->
-    <div class="reveal" style="margin-top: 3rem;">
-      <h2>三步安装 OpenClaw</h2>
+    <div class="reveal">
+      <h2>三步安裝 OpenClaw</h2>
 
-      <h3>第一步：安装</h3>
-      <p><strong>macOS / Linux</strong> —— 打开终端（Terminal），粘贴以下命令：</p>
+      <h3>第一步：安裝</h3>
+      <p><strong>macOS / Linux</strong> —— 打開終端（Terminal），貼上以下命令：</p>
       <pre><code>curl -fsSL https://openclaw.ai/install.sh | bash</code></pre>
 
-      <p><strong>Windows</strong> —— 打开 PowerShell，粘贴以下命令：</p>
+      <p><strong>Windows</strong> —— 打開 PowerShell，貼上以下命令：</p>
       <pre><code>iwr -useb https://openclaw.ai/install.ps1 | iex</code></pre>
 
-      <p>也可以通过 npm 安装：</p>
+      <p>也可以透過 npm 安裝：</p>
       <pre><code>npm i -g openclaw</code></pre>
 
-      <h3 style="margin-top: 2rem;">第二步：初始化设置</h3>
-      <p>安装完成后，运行设置向导：</p>
+      <h3>第二步：初始化設定</h3>
+      <p>安裝完成後，執行設定精靈：</p>
       <pre><code>openclaw init</code></pre>
-      <p>向导会引导你：</p>
+      <p>精靈會引導你：</p>
       <ul>
-        <li>选择 AI 模型（推荐 Claude Sonnet —— 性价比最高）</li>
-        <li>输入你的 API Key</li>
-        <li>连接通讯渠道（Telegram、WhatsApp 等）</li>
-        <li>设置基本偏好（语言、时区等）</li>
+        <li>選擇 AI 模型（推薦 Claude Sonnet —— 性價比最高）</li>
+        <li>輸入你的 API Key</li>
+        <li>連接通訊頻道（Telegram、WhatsApp 等）</li>
+        <li>設定基本偏好（語言、時區等）</li>
       </ul>
 
-      <h3 style="margin-top: 2rem;">第三步：开始对话</h3>
-      <p>设置完成后，直接在终端输入：</p>
+      <h3>第三步：開始對話</h3>
+      <p>設定完成後，直接在終端輸入：</p>
       <pre><code>openclaw chat</code></pre>
-      <p>或者打开你绑定的 Telegram / WhatsApp，直接给 OpenClaw 发消息就行了！</p>
+      <p>或者打開你綁定的 Telegram / WhatsApp，直接給 OpenClaw 發消息就行了！</p>
     </div>
 
     <!-- What can it do -->
-    <div class="reveal" style="margin-top: 3rem;">
-      <h2>OpenClaw 能帮你做什么？</h2>
+    <div class="reveal">
+      <h2>OpenClaw 能幫你做什麼？</h2>
       <div class="card-grid card-grid--3col" style="margin-top: 1.5rem;">
         <div class="card">
           <div class="card-icon">📧</div>
-          <h3>邮件管理</h3>
-          <p>自动整理收件箱、退订垃圾邮件、草拟回复、提醒重要邮件。</p>
+          <h3>郵件管理</h3>
+          <p>自動整理收件匣、退訂垃圾郵件、草擬回覆、提醒重要郵件。</p>
         </div>
         <div class="card">
           <div class="card-icon">📅</div>
           <h3>日程管理</h3>
-          <p>查看日程、创建提醒、安排会议、发送每日简报。</p>
+          <p>查看日程、建立提醒、安排會議、發送每日簡報。</p>
         </div>
         <div class="card">
           <div class="card-icon">🌐</div>
-          <h3>网页自动化</h3>
-          <p>自动登录网站、填写表单、下载文件、抓取网页数据。</p>
+          <h3>網頁自動化</h3>
+          <p>自動登入網站、填寫表單、下載檔案、抓取網頁數據。</p>
         </div>
         <div class="card">
           <div class="card-icon">💻</div>
-          <h3>开发辅助</h3>
-          <p>运行代码、执行测试、创建 PR、监控错误日志 —— 全部通过聊天完成。</p>
+          <h3>開發輔助</h3>
+          <p>執行程式碼、跑測試、建立 PR、監控錯誤日誌 —— 全部透過聊天完成。</p>
         </div>
         <div class="card">
           <div class="card-icon">📊</div>
-          <h3>数据分析</h3>
-          <p>整合本地文件、Obsidian 笔记、Notion 数据库，帮你做知识检索和总结。</p>
+          <h3>數據分析</h3>
+          <p>整合本地檔案、Obsidian 筆記、Notion 資料庫，幫你做知識檢索和總結。</p>
         </div>
         <div class="card">
           <div class="card-icon">🏠</div>
           <h3>智能家居</h3>
-          <p>控制智能灯泡、空气净化器等 IoT 设备，一句话就搞定。</p>
+          <p>控制智能燈泡、空氣清淨機等 IoT 裝置，一句話就搞定。</p>
         </div>
       </div>
     </div>
 
     <!-- Architecture -->
-    <div class="reveal" style="margin-top: 3rem;">
-      <h2>它是怎么工作的？（架构简述）</h2>
-      <p>OpenClaw 采用四层架构，你不需要完全理解，但了解基本原理有助于排查问题：</p>
+    <div class="reveal">
+      <h2>它是怎麼運作的？（架構簡述）</h2>
+      <p>OpenClaw 採用四層架構，你不需要完全理解，但了解基本原理有助於排查問題：</p>
       <ol>
-        <li><strong>通讯层（Channel）</strong> —— Telegram、WhatsApp 等消息入口</li>
-        <li><strong>网关层（Gateway）</strong> —— Node.js 中枢，管理状态和任务调度</li>
-        <li><strong>大脑层（LLM Brain）</strong> —— Claude、GPT 或本地模型，负责思考和决策</li>
-        <li><strong>技能层（Skills）</strong> —— TypeScript 模块，定义具体能力（浏览器操作、文件管理等）</li>
+        <li><strong>通訊層（Channel）</strong> —— Telegram、WhatsApp 等訊息入口</li>
+        <li><strong>閘道層（Gateway）</strong> —— Node.js 中樞，管理狀態和任務調度</li>
+        <li><strong>大腦層（LLM Brain）</strong> —— Claude、GPT 或本地模型，負責思考和決策</li>
+        <li><strong>技能層（Skills）</strong> —— TypeScript 模組，定義具體能力（瀏覽器操作、檔案管理等）</li>
       </ol>
-      <p>还有一个特殊功能叫 <strong>Heartbeat（心跳）</strong>：它是一个后台定时器，让 OpenClaw 可以定期自动执行任务，比如每天早上给你发新闻摘要。</p>
+      <p>還有一個特殊功能叫 <strong>Heartbeat（心跳）</strong>：它是一個後台計時器，讓 OpenClaw 可以定期自動執行任務，比如每天早上給你發新聞摘要。</p>
     </div>
 
     <!-- Security -->
-    <div class="reveal" style="margin-top: 3rem;">
-      <h2 style="color: #dc2626;">安全注意事项（非常重要）</h2>
-      <div style="background: rgba(220, 38, 38, 0.04); border: 1px solid rgba(220, 38, 38, 0.12); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem;">
+    <div class="reveal">
+      <h2 style="color: #dc2626;">安全注意事項（非常重要）</h2>
+      <div
+        style="background: rgba(220, 38, 38, 0.04); border: 1px solid rgba(220, 38, 38, 0.12); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem;">
         <p style="color: var(--color-text); margin-bottom: 0;">
-          OpenClaw 的一位核心维护者曾警告：<em>"如果你不懂命令行，这个项目对你来说太危险了。"</em>
-          给 AI 终端访问权限相当于给了它 <strong>"上帝模式"</strong>，所以安全措施必须到位。
+          OpenClaw 的一位核心維護者曾警告：<em>「如果你不懂命令列，這個專案對你來說太危險了。」</em>
+          給 AI 終端存取權限相當於給了它 <strong>「上帝模式」</strong>，所以安全措施必須到位。
         </p>
       </div>
-      <p><strong>新手必做的安全清单：</strong></p>
+      <p><strong>新手必做的安全清單：</strong></p>
       <ul>
-        <li><strong>创建独立用户：</strong>创建一个专门的 <code>ai-agent</code> 系统用户，限制它的文件访问范围</li>
-        <li><strong>使用 Docker 容器：</strong>把 OpenClaw 跑在容器里，限制它能看到的文件和目录</li>
-        <li><strong>设置 API 花费上限：</strong>在 API 平台设置每日花费上限（建议 $5-$10），避免意外高额账单</li>
-        <li><strong>白名单机制：</strong>只允许你自己的 Telegram/WhatsApp ID 发送指令</li>
-        <li><strong>审批机制：</strong>对危险命令（rm、sudo、curl）启用人工确认</li>
-        <li><strong>不要给银行密码：</strong>任何涉及金融操作的场景，永远不要让 AI 直接接触你的银行凭据</li>
+        <li><strong>建立獨立使用者：</strong>建立一個專門的 <code>ai-agent</code> 系統使用者，限制它的檔案存取範圍</li>
+        <li><strong>使用 Docker 容器：</strong>把 OpenClaw 跑在容器裡，限制它能看到的檔案和目錄</li>
+        <li><strong>設定 API 花費上限：</strong>在 API 平台設定每日花費上限（建議 $5-$10），避免意外高額帳單</li>
+        <li><strong>白名單機制：</strong>只允許你自己的 Telegram/WhatsApp ID 發送指令</li>
+        <li><strong>審批機制：</strong>對危險命令（rm、sudo、curl）啟用人工確認</li>
+        <li><strong>不要給銀行密碼：</strong>任何涉及金融操作的場景，永遠不要讓 AI 直接接觸你的銀行憑據</li>
       </ul>
     </div>
 
     <!-- Cost -->
-    <div class="reveal" style="margin-top: 3rem;">
-      <h2>费用参考</h2>
+    <div class="reveal">
+      <h2>費用參考</h2>
       <ul>
-        <li><strong>OpenClaw 本身：</strong>完全免费开源</li>
-        <li><strong>AI 模型 API：</strong>按用量计费，大约每 100 个任务 $0.50 – $2.00（使用 Claude Sonnet）</li>
-        <li><strong>硬件：</strong>推荐使用 Mac Mini 或 Intel NUC 作为 24/7 运行的专用设备</li>
+        <li><strong>OpenClaw 本身：</strong>完全免費開源</li>
+        <li><strong>AI 模型 API：</strong>按用量計費，大約每 100 個任務 $0.50 – $2.00（使用 Claude Sonnet）</li>
+        <li><strong>硬體：</strong>推薦使用 Mac Mini 或 Intel NUC 作為 24/7 運行的專用設備</li>
       </ul>
-      <p>一般个人用户，每月 AI API 花费大概在 $5 – $20 左右。</p>
+      <p>一般個人使用者，每月 AI API 花費大概在 $5 – $20 左右。</p>
     </div>
 
     <!-- Tips -->
-    <div class="reveal" style="margin-top: 3rem;">
-      <h2>给小白的 5 个建议</h2>
+    <div class="reveal">
+      <h2>給小白的 5 個建議</h2>
       <ol>
-        <li><strong>先只读不写：</strong>刚开始只给 OpenClaw 读取权限，观察 48 小时确认它的行为后再开放写入/执行权限</li>
-        <li><strong>从简单任务开始：</strong>先让它帮你查天气、总结文章，别一上来就让它管你的邮箱</li>
-        <li><strong>善用 Telegram：</strong>Telegram 是最成熟的通讯渠道，设置最简单，推荐新手首选</li>
-        <li><strong>定期检查日志：</strong>OpenClaw 会记录所有执行过的命令，养成定期查看的习惯</li>
-        <li><strong>加入社区：</strong>遇到问题去 <a href="https://github.com/openclaw/openclaw" target="_blank">GitHub</a> 或 Discord 社区提问，社区非常活跃</li>
+        <li><strong>先唯讀不寫：</strong>剛開始只給 OpenClaw 讀取權限，觀察 48 小時確認它的行為後再開放寫入/執行權限</li>
+        <li><strong>從簡單任務開始：</strong>先讓它幫你查天氣、總結文章，別一上來就讓它管你的信箱</li>
+        <li><strong>善用 Telegram：</strong>Telegram 是最成熟的通訊頻道，設定最簡單，推薦新手首選</li>
+        <li><strong>定期檢查日誌：</strong>OpenClaw 會記錄所有執行過的命令，養成定期查看的習慣</li>
+        <li><strong>加入社群：</strong>遇到問題去 <a href="https://github.com/openclaw/openclaw" target="_blank">GitHub</a> 或
+          Discord 社群提問，社群非常活躍</li>
       </ol>
     </div>
 
     <!-- Summary -->
-    <div class="reveal" style="margin-top: 3rem;">
-      <h2>总结</h2>
+    <div class="reveal">
+      <h2>總結</h2>
       <p>
-        OpenClaw 是目前最强大的开源 AI 代理框架之一。它把 AI 从"只能聊天"升级成了"能真正干活的私人助手"。
-        虽然上手需要一点点技术基础，但只要按照本指南一步步来，即使是完全的小白也能把它跑起来。
+        OpenClaw 是目前最強大的開源 AI 代理框架之一。它把 AI 從「只能聊天」升級成了「能真正幹活的私人助手」。
       </p>
-      <p><strong>记住：先求稳，再求快。安全永远是第一位的。</strong></p>
+      <p>
+        雖然上手需要一點點技術基礎，但只要按照本指南一步步來，即使是完全的小白也能把它跑起來。
+      </p>
+      <p><strong>記住：先求穩，再求快。安全永遠是第一位的。</strong></p>
     </div>
 
     <!-- Resources -->
-    <div class="reveal" style="margin-top: 3rem;">
-      <h2>参考资源</h2>
+    <div class="reveal">
+      <h2>參考資源</h2>
       <ul>
-        <li><a href="https://openclaw.ai/" target="_blank">OpenClaw 官网</a></li>
-        <li><a href="https://github.com/openclaw/openclaw" target="_blank">GitHub 仓库</a></li>
-        <li><a href="https://alphatechfinance.com/productivity-app/openclaw-ai-agent-2026-guide/" target="_blank">OpenClaw 2026 完整指南（英文）</a></li>
-        <li><a href="https://dev.to/laracopilot/what-is-openclaw-ai-in-2026-a-practical-guide-for-developers-25hj" target="_blank">开发者实用指南（英文）</a></li>
+        <li><a href="https://openclaw.ai/" target="_blank">OpenClaw 官網</a></li>
+        <li><a href="https://github.com/openclaw/openclaw" target="_blank">GitHub 倉庫</a></li>
+        <li><a href="https://alphatechfinance.com/productivity-app/openclaw-ai-agent-2026-guide/"
+            target="_blank">OpenClaw 2026 完整指南（英文）</a></li>
+        <li><a href="https://dev.to/laracopilot/what-is-openclaw-ai-in-2026-a-practical-guide-for-developers-25hj"
+            target="_blank">開發者實用指南（英文）</a></li>
       </ul>
     </div>
 
