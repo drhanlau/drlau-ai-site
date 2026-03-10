@@ -1,0 +1,720 @@
+---
+layout: default
+title: Markdown 完整教學指南 — AI 時代的必備語言
+permalink: /markdown-chinese/
+---
+
+<section>
+  <div class="wrapper guide-content">
+    <div class="guide-hero">
+      <div class="guide-hero__text">
+        <p class="section-label animate-fade-up">Markdown 教學 / 完整指南</p>
+        <h1 class="animate-fade-up delay-1">Markdown 完整教學指南</h1>
+        <p class="animate-fade-up delay-2"
+          style="color: var(--color-text-light); font-size: 1.05rem;">
+          AI 時代的必備書寫語言 —— 從零基礎到進階應用，一篇搞定。
+        </p>
+        <div class="animate-fade-up delay-3">
+          <h2>什麼是 Markdown？</h2>
+          <p>
+            <strong>Markdown</strong> 是一種<strong>輕量級標記語言</strong>，由 John Gruber 於 2004 年創造。
+            它讓你用純文字就能寫出排版精美的文件，不需要像 Word 那樣點來點去。
+          </p>
+          <p>
+            簡單來說：<strong>你只需要記住幾個符號，就能產生標題、粗體、列表、連結、表格等格式。</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 為什麼在 AI 時代要學 Markdown -->
+    <div class="reveal">
+      <h2>為什麼在 AI 時代一定要學 Markdown？</h2>
+      <div class="card-grid card-grid--2col" style="margin-top: 1.5rem;">
+        <div class="card">
+          <div class="card-icon">🤖</div>
+          <h3>AI 的通用語言</h3>
+          <p>ChatGPT、Claude、Gemini 等 AI 工具的輸入與輸出幾乎都使用 Markdown 格式。學會 Markdown，你就能更精準地和 AI 溝通。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📝</div>
+          <h3>Prompt 工程必備</h3>
+          <p>撰寫結構化的 Prompt 時，使用 Markdown 的標題、列表、程式碼區塊能讓 AI 更好地理解你的意圖，產出更高品質的回覆。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h3>開發者的日常</h3>
+          <p>GitHub README、技術文件、API 文件、部落格文章 —— 全都用 Markdown。學一次，到處都能用。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>極速書寫</h3>
+          <p>不需要離開鍵盤去按工具列按鈕。用幾個簡單的符號，打字速度就是排版速度。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 目錄 -->
+    <div class="reveal">
+      <h2>目錄</h2>
+      <ol>
+        <li><a href="#headings">標題（Headings）</a></li>
+        <li><a href="#text-formatting">文字格式（Text Formatting）</a></li>
+        <li><a href="#paragraphs">段落與換行（Paragraphs & Line Breaks）</a></li>
+        <li><a href="#lists">列表（Lists）</a></li>
+        <li><a href="#links">連結（Links）</a></li>
+        <li><a href="#images">圖片（Images）</a></li>
+        <li><a href="#code">程式碼（Code）</a></li>
+        <li><a href="#blockquotes">引用（Blockquotes）</a></li>
+        <li><a href="#tables">表格（Tables）</a></li>
+        <li><a href="#horizontal-rules">分隔線（Horizontal Rules）</a></li>
+        <li><a href="#task-lists">任務清單（Task Lists）</a></li>
+        <li><a href="#footnotes">註腳（Footnotes）</a></li>
+        <li><a href="#escaping">跳脫字元（Escaping）</a></li>
+        <li><a href="#html-in-markdown">在 Markdown 中使用 HTML</a></li>
+        <li><a href="#ai-prompt">AI Prompt 中的 Markdown 技巧</a></li>
+        <li><a href="#tools">Markdown 工具推薦</a></li>
+        <li><a href="#cheatsheet">速查表（Cheat Sheet）</a></li>
+      </ol>
+    </div>
+
+    <!-- 1. 標題 -->
+    <div class="reveal" id="headings">
+      <h2>1. 標題（Headings）</h2>
+      <p>使用 <code>#</code> 號來建立標題，<code>#</code> 的數量決定標題的層級（1 到 6 級）。</p>
+
+      <h3>語法</h3>
+      <pre><code># 一級標題（H1）
+## 二級標題（H2）
+### 三級標題（H3）
+#### 四級標題（H4）
+##### 五級標題（H5）
+###### 六級標題（H6）</code></pre>
+
+      <h3>注意事項</h3>
+      <ul>
+        <li><code>#</code> 後面必須加一個空格，否則不會生效</li>
+        <li>一篇文章通常只用一個 H1 作為主標題</li>
+        <li>層級不要跳著用（例如 H1 之後直接用 H4）</li>
+      </ul>
+
+      <h3>AI 時代技巧</h3>
+      <p>在 Prompt 中使用標題來組織指令結構，能幫助 AI 更好地理解你的需求：</p>
+      <pre><code># 角色設定
+你是一位資深的 Python 開發者。
+
+## 任務
+幫我重構以下程式碼。
+
+## 要求
+- 提高可讀性
+- 加入錯誤處理
+- 加入型別註解</code></pre>
+    </div>
+
+    <!-- 2. 文字格式 -->
+    <div class="reveal" id="text-formatting">
+      <h2>2. 文字格式（Text Formatting）</h2>
+
+      <h3>粗體</h3>
+      <p>用兩個星號 <code>**</code> 或兩個底線 <code>__</code> 包圍文字：</p>
+      <pre><code>**這是粗體文字**
+__這也是粗體文字__</code></pre>
+
+      <h3>斜體</h3>
+      <p>用一個星號 <code>*</code> 或一個底線 <code>_</code> 包圍文字：</p>
+      <pre><code>*這是斜體文字*
+_這也是斜體文字_</code></pre>
+
+      <h3>粗斜體</h3>
+      <p>用三個星號 <code>***</code> 包圍文字：</p>
+      <pre><code>***這是粗斜體文字***</code></pre>
+
+      <h3>刪除線</h3>
+      <p>用兩個波浪號 <code>~~</code> 包圍文字：</p>
+      <pre><code>~~這段文字被刪除了~~</code></pre>
+
+      <h3>螢光標記（部分平台支援）</h3>
+      <p>用兩個等號 <code>==</code> 包圍文字：</p>
+      <pre><code>==這是螢光標記的文字==</code></pre>
+
+      <h3>上標與下標（部分平台支援）</h3>
+      <pre><code>H~2~O（下標）
+X^2^（上標）</code></pre>
+    </div>
+
+    <!-- 3. 段落與換行 -->
+    <div class="reveal" id="paragraphs">
+      <h2>3. 段落與換行（Paragraphs & Line Breaks）</h2>
+
+      <h3>段落</h3>
+      <p>用一個空行來分隔段落：</p>
+      <pre><code>這是第一段。
+
+這是第二段。中間隔了一行空行。</code></pre>
+
+      <h3>強制換行</h3>
+      <p>在行尾加上<strong>兩個空格</strong>然後按 Enter，或者使用 <code>&lt;br&gt;</code> 標籤：</p>
+      <pre><code>這是第一行（行尾有兩個空格）
+這是第二行
+
+或者用 HTML 標籤：
+第一行&lt;br&gt;第二行</code></pre>
+
+      <p><strong>常見錯誤：</strong>直接按一次 Enter 不會產生換行，文字會被連在同一行。</p>
+    </div>
+
+    <!-- 4. 列表 -->
+    <div class="reveal" id="lists">
+      <h2>4. 列表（Lists）</h2>
+
+      <h3>無序列表</h3>
+      <p>使用 <code>-</code>、<code>*</code> 或 <code>+</code> 作為項目符號：</p>
+      <pre><code>- 蘋果
+- 香蕉
+- 橘子
+
+* 項目一
+* 項目二
+
++ 項目 A
++ 項目 B</code></pre>
+
+      <h3>有序列表</h3>
+      <p>使用數字加句點：</p>
+      <pre><code>1. 第一步
+2. 第二步
+3. 第三步</code></pre>
+      <p><strong>小技巧：</strong>其實數字不需要連續，Markdown 會自動排序。但為了可讀性，建議按順序寫。</p>
+
+      <h3>巢狀列表</h3>
+      <p>用縮排（2 或 4 個空格）來建立子列表：</p>
+      <pre><code>- 水果
+  - 蘋果
+    - 富士蘋果
+    - 青蘋果
+  - 香蕉
+- 蔬菜
+  - 花椰菜
+  - 胡蘿蔔</code></pre>
+
+      <h3>混合列表</h3>
+      <pre><code>1. 第一步
+   - 注意事項 A
+   - 注意事項 B
+2. 第二步
+   - 注意事項 C</code></pre>
+    </div>
+
+    <!-- 5. 連結 -->
+    <div class="reveal" id="links">
+      <h2>5. 連結（Links）</h2>
+
+      <h3>行內連結</h3>
+      <pre><code>[顯示文字](https://example.com)
+
+[Google](https://www.google.com "滑鼠懸停時顯示的提示文字")</code></pre>
+
+      <h3>參考式連結</h3>
+      <p>適合同一個連結被多次引用的情況：</p>
+      <pre><code>這是 [Markdown 官方文件][md-docs] 的連結。
+
+你也可以參考 [Markdown 指南][md-docs]。
+
+[md-docs]: https://www.markdownguide.org "Markdown Guide"</code></pre>
+
+      <h3>自動連結</h3>
+      <pre><code>&lt;https://www.google.com&gt;
+&lt;email@example.com&gt;</code></pre>
+
+      <h3>頁內錨點連結</h3>
+      <p>連結到同一頁面的標題：</p>
+      <pre><code>[跳到標題區段](#標題的英文小寫-用連字號連接)</code></pre>
+    </div>
+
+    <!-- 6. 圖片 -->
+    <div class="reveal" id="images">
+      <h2>6. 圖片（Images）</h2>
+
+      <h3>基本語法</h3>
+      <p>和連結很像，前面多一個驚嘆號 <code>!</code>：</p>
+      <pre><code>![替代文字](圖片網址)
+
+![可愛的貓咪](https://example.com/cat.jpg "貓咪照片")</code></pre>
+
+      <h3>參考式圖片</h3>
+      <pre><code>![替代文字][img-id]
+
+[img-id]: https://example.com/image.png "圖片標題"</code></pre>
+
+      <h3>圖片加連結</h3>
+      <p>把圖片語法包在連結語法裡面：</p>
+      <pre><code>[![替代文字](圖片網址)](連結網址)</code></pre>
+
+      <h3>調整圖片大小（使用 HTML）</h3>
+      <pre><code>&lt;img src="image.png" alt="說明" width="300"&gt;</code></pre>
+    </div>
+
+    <!-- 7. 程式碼 -->
+    <div class="reveal" id="code">
+      <h2>7. 程式碼（Code）</h2>
+
+      <h3>行內程式碼</h3>
+      <p>用單個反引號 <code>`</code> 包圍：</p>
+      <pre><code>請使用 `print("Hello")` 來輸出文字。
+
+變數 `x` 的值是 `42`。</code></pre>
+
+      <h3>程式碼區塊</h3>
+      <p>用三個反引號 <code>```</code> 包圍，可以指定程式語言以啟用語法高亮：</p>
+      <pre><code>```python
+def greet(name):
+    """和某人打招呼"""
+    return f"你好，{name}！歡迎來到 AI 的世界。"
+
+print(greet("小明"))
+```</code></pre>
+
+      <h3>常用程式語言標示</h3>
+      <div class="card-grid card-grid--3col" style="margin-top: 1rem;">
+        <div class="card">
+          <p><code>```python</code></p>
+          <p><code>```javascript</code></p>
+          <p><code>```typescript</code></p>
+        </div>
+        <div class="card">
+          <p><code>```html</code></p>
+          <p><code>```css</code></p>
+          <p><code>```json</code></p>
+        </div>
+        <div class="card">
+          <p><code>```bash</code></p>
+          <p><code>```sql</code></p>
+          <p><code>```markdown</code></p>
+        </div>
+      </div>
+
+      <h3>AI 時代技巧</h3>
+      <p>在和 AI 對話時，用程式碼區塊包住你的程式碼，AI 就能更準確地理解和修改你的程式碼：</p>
+      <pre><code>請幫我修改以下程式碼，加入錯誤處理：
+
+```python
+data = open("file.txt").read()
+result = json.loads(data)
+```</code></pre>
+    </div>
+
+    <!-- 8. 引用 -->
+    <div class="reveal" id="blockquotes">
+      <h2>8. 引用（Blockquotes）</h2>
+
+      <h3>基本引用</h3>
+      <p>用 <code>&gt;</code> 開頭：</p>
+      <pre><code>&gt; 學習 Markdown 最好的時間是十年前，其次是現在。</code></pre>
+
+      <h3>多行引用</h3>
+      <pre><code>&gt; 這是第一行引用。
+&gt;
+&gt; 這是第二段引用。
+&gt; 可以跨越多行。</code></pre>
+
+      <h3>巢狀引用</h3>
+      <pre><code>&gt; 這是外層引用。
+&gt;
+&gt; &gt; 這是內層引用。
+&gt;
+&gt; 回到外層。</code></pre>
+
+      <h3>引用中使用其他格式</h3>
+      <pre><code>&gt; **注意：** 引用裡面可以使用 *斜體*、`程式碼`、列表等。
+&gt;
+&gt; - 項目一
+&gt; - 項目二</code></pre>
+
+      <h3>GitHub 風格的提示區塊</h3>
+      <p>GitHub 和部分平台支援特殊的提示語法：</p>
+      <pre><code>&gt; [!NOTE]
+&gt; 這是一個備註提示。
+
+&gt; [!TIP]
+&gt; 這是一個小技巧。
+
+&gt; [!WARNING]
+&gt; 這是一個警告。
+
+&gt; [!CAUTION]
+&gt; 這是一個危險警告。
+
+&gt; [!IMPORTANT]
+&gt; 這是一個重要提示。</code></pre>
+    </div>
+
+    <!-- 9. 表格 -->
+    <div class="reveal" id="tables">
+      <h2>9. 表格（Tables）</h2>
+
+      <h3>基本表格</h3>
+      <p>用 <code>|</code> 分隔欄位，用 <code>---</code> 分隔標題和內容：</p>
+      <pre><code>| 功能     | Markdown 語法  | 說明           |
+| -------- | -------------- | -------------- |
+| 粗體     | `**文字**`     | 兩個星號包圍   |
+| 斜體     | `*文字*`       | 一個星號包圍   |
+| 程式碼   | `` `code` ``   | 反引號包圍     |
+| 連結     | `[文字](URL)`  | 方括號加圓括號 |</code></pre>
+
+      <h3>對齊方式</h3>
+      <p>在分隔線中使用冒號 <code>:</code> 來控制對齊：</p>
+      <pre><code>| 靠左對齊     | 置中對齊      | 靠右對齊     |
+| :----------- | :-----------: | -----------: |
+| 左           | 中            | 右           |
+| Apple        | Banana        | $1.00        |
+| Strawberry   | Orange        | $2.50        |</code></pre>
+
+      <h3>注意事項</h3>
+      <ul>
+        <li>表格的欄位不需要完全對齊（但對齊比較好讀）</li>
+        <li>表格中可以使用連結、粗體、斜體、行內程式碼</li>
+        <li>不支援表格中的換行（需使用 <code>&lt;br&gt;</code> 標籤）</li>
+        <li>不支援合併儲存格（需使用 HTML）</li>
+      </ul>
+    </div>
+
+    <!-- 10. 分隔線 -->
+    <div class="reveal" id="horizontal-rules">
+      <h2>10. 分隔線（Horizontal Rules）</h2>
+      <p>用三個以上的星號、減號或底線：</p>
+      <pre><code>***
+
+---
+
+___</code></pre>
+      <p>三種寫法效果完全相同，建議統一使用 <code>---</code>。</p>
+    </div>
+
+    <!-- 11. 任務清單 -->
+    <div class="reveal" id="task-lists">
+      <h2>11. 任務清單（Task Lists）</h2>
+      <p>GitHub Flavored Markdown (GFM) 支援任務清單，非常適合追蹤待辦事項：</p>
+      <pre><code>- [x] 學會 Markdown 基本語法
+- [x] 了解標題和文字格式
+- [ ] 練習表格語法
+- [ ] 學會在 AI Prompt 中使用 Markdown
+- [ ] 寫一篇自己的 Markdown 文件</code></pre>
+
+      <h3>AI 時代技巧</h3>
+      <p>用任務清單給 AI 佈置多個子任務：</p>
+      <pre><code>請幫我完成以下任務：
+
+- [ ] 檢查程式碼中的安全漏洞
+- [ ] 為每個函式加上文件字串
+- [ ] 撰寫單元測試
+- [ ] 產生 API 文件</code></pre>
+    </div>
+
+    <!-- 12. 註腳 -->
+    <div class="reveal" id="footnotes">
+      <h2>12. 註腳（Footnotes）</h2>
+      <p>部分 Markdown 引擎支援註腳語法：</p>
+      <pre><code>Markdown 是由 John Gruber 發明的[^1]。
+
+它的設計哲學是讓文件「原始碼」也具有可讀性[^readability]。
+
+[^1]: John Gruber 在 2004 年發布了 Markdown。
+[^readability]: 這是 Markdown 最重要的設計目標之一。</code></pre>
+    </div>
+
+    <!-- 13. 跳脫字元 -->
+    <div class="reveal" id="escaping">
+      <h2>13. 跳脫字元（Escaping）</h2>
+      <p>如果你要顯示 Markdown 使用的特殊符號本身，在前面加上反斜線 <code>\</code>：</p>
+      <pre><code>\* 這不是斜體 \*
+\# 這不是標題
+\[這不是連結\](也不是)
+\`這不是程式碼\`</code></pre>
+
+      <h3>可以跳脫的字元</h3>
+      <pre><code>\   反斜線
+`   反引號
+*   星號
+_   底線
+{}  大括號
+[]  方括號
+()  圓括號
+#   井號
++   加號
+-   減號
+.   句點
+!   驚嘆號
+|   管線符號</code></pre>
+    </div>
+
+    <!-- 14. 在 Markdown 中使用 HTML -->
+    <div class="reveal" id="html-in-markdown">
+      <h2>14. 在 Markdown 中使用 HTML</h2>
+      <p>大多數 Markdown 引擎允許你直接嵌入 HTML：</p>
+
+      <h3>常見用法</h3>
+      <pre><code>&lt;!-- 這是 HTML 註解，不會被渲染 --&gt;
+
+&lt;details&gt;
+  &lt;summary&gt;點擊展開更多內容&lt;/summary&gt;
+  這裡是隱藏的內容，點擊上面的文字就會顯示。
+&lt;/details&gt;
+
+&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt; 複製
+
+&lt;mark&gt;螢光標記文字&lt;/mark&gt;
+
+&lt;div align="center"&gt;
+  置中的內容
+&lt;/div&gt;</code></pre>
+
+      <h3>注意事項</h3>
+      <ul>
+        <li>HTML 區塊內的 Markdown 語法通常不會被解析</li>
+        <li>有些平台（如 GitHub）會過濾部分 HTML 標籤（如 <code>&lt;script&gt;</code>、<code>&lt;style&gt;</code>）</li>
+        <li>能用 Markdown 解決的就不要用 HTML，保持簡潔</li>
+      </ul>
+    </div>
+
+    <!-- 15. AI Prompt 中的 Markdown -->
+    <div class="reveal" id="ai-prompt">
+      <h2>15. AI Prompt 中的 Markdown 技巧</h2>
+      <p>在 AI 時代，Markdown 已成為人機溝通的「共同語言」。以下是在 Prompt 中善用 Markdown 的技巧：</p>
+
+      <h3>結構化 Prompt 模板</h3>
+      <pre><code># 角色
+你是一位 [專業領域] 的專家。
+
+## 背景
+[提供相關的背景資訊]
+
+## 任務
+[清楚描述你要 AI 做什麼]
+
+## 要求
+- 要求一
+- 要求二
+- 要求三
+
+## 輸出格式
+[描述你期望的輸出格式]
+
+## 範例
+[提供一個輸入/輸出的範例]</code></pre>
+
+      <h3>用分隔線分離上下文</h3>
+      <pre><code>以下是需要翻譯的文章：
+
+---
+
+[文章內容]
+
+---
+
+請將上面的文章翻譯成繁體中文，保持原有的 Markdown 格式。</code></pre>
+
+      <h3>用程式碼區塊包裹數據</h3>
+      <pre><code>請分析以下 JSON 數據，找出異常值：
+
+```json
+{
+  "users": [
+    {"name": "Alice", "age": 25},
+    {"name": "Bob", "age": -3},
+    {"name": "Charlie", "age": 200}
+  ]
+}
+```</code></pre>
+
+      <h3>用表格提供結構化輸入</h3>
+      <pre><code>請根據以下產品資訊，撰寫行銷文案：
+
+| 產品名稱 | 價格   | 特色功能       |
+| -------- | ------ | -------------- |
+| AI 助手  | $9/月  | 語音對話、翻譯 |
+| 智能筆記 | $5/月  | 自動摘要、整理 |</code></pre>
+
+      <h3>用任務清單追蹤多步驟任務</h3>
+      <pre><code>我正在建一個網站，請幫我逐步完成：
+
+- [x] 設計首頁 wireframe
+- [ ] 建立導覽列
+- [ ] 實作 RWD 響應式設計
+- [ ] 加入深色模式</code></pre>
+
+      <h3>CLAUDE.md / AGENTS.md / RULES.md</h3>
+      <p>現代 AI 編程工具（如 Claude Code、Cursor、GitHub Copilot）都支援用 Markdown 檔案來設定 AI 的行為規範。這些檔案就是用 Markdown 撰寫的：</p>
+      <pre><code># CLAUDE.md 範例
+
+## 程式碼規範
+- 使用 TypeScript，不要用 JavaScript
+- 優先使用函式式程式設計風格
+- 所有函式都要加型別註解
+
+## 測試規範
+- 每個功能都要有單元測試
+- 測試覆蓋率不低於 80%
+
+## Git 規範
+- Commit message 使用英文
+- 遵循 Conventional Commits 格式</code></pre>
+    </div>
+
+    <!-- 16. 工具推薦 -->
+    <div class="reveal" id="tools">
+      <h2>16. Markdown 工具推薦</h2>
+
+      <h3>編輯器</h3>
+      <div class="card-grid card-grid--3col" style="margin-top: 1rem;">
+        <div class="card">
+          <div class="card-icon">📓</div>
+          <h3>Obsidian</h3>
+          <p>最佳 Markdown 筆記工具，支援雙向連結、圖譜視圖、豐富的外掛生態。完全免費。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💜</div>
+          <h3>VS Code</h3>
+          <p>微軟的免費編輯器，內建 Markdown 預覽，搭配外掛功能強大。程式設計師首選。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">✍️</div>
+          <h3>Typora</h3>
+          <p>所見即所得的 Markdown 編輯器，打字的同時即時渲染。介面簡潔優雅。</p>
+        </div>
+      </div>
+
+      <h3>線上工具</h3>
+      <div class="card-grid card-grid--2col" style="margin-top: 1rem;">
+        <div class="card">
+          <div class="card-icon">🌐</div>
+          <h3>HackMD / CodiMD</h3>
+          <p>線上多人協作 Markdown 編輯器，支援即時同步、投影片模式、書本模式。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📄</div>
+          <h3>Notion</h3>
+          <p>雖然有自己的格式系統，但支援 Markdown 快捷鍵輸入，匯出也支援 Markdown。</p>
+        </div>
+      </div>
+
+      <h3>AI 工具中的 Markdown</h3>
+      <ul>
+        <li><strong>ChatGPT / Claude：</strong>輸入和輸出都原生支援 Markdown</li>
+        <li><strong>Claude Code：</strong>整個工作流程都基於 Markdown（CLAUDE.md 設定檔）</li>
+        <li><strong>Cursor / Windsurf：</strong>AI 程式碼編輯器，Rules 設定使用 Markdown</li>
+        <li><strong>GitHub Copilot：</strong>支援 Markdown 文件的自動補全</li>
+      </ul>
+    </div>
+
+    <!-- 17. 速查表 -->
+    <div class="reveal" id="cheatsheet">
+      <h2>17. 速查表（Cheat Sheet）</h2>
+      <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+          <thead>
+            <tr style="background: var(--color-bg-alt);">
+              <th style="padding: 0.75rem 1rem; text-align: left; border-bottom: 2px solid var(--color-border);">功能</th>
+              <th style="padding: 0.75rem 1rem; text-align: left; border-bottom: 2px solid var(--color-border);">語法</th>
+              <th style="padding: 0.75rem 1rem; text-align: left; border-bottom: 2px solid var(--color-border);">效果</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">標題</td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><code># H1</code> ~ <code>###### H6</code></td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">不同層級的標題</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">粗體</td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><code>**文字**</code></td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><strong>文字</strong></td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">斜體</td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><code>*文字*</code></td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><em>文字</em></td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">刪除線</td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><code>~~文字~~</code></td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><del>文字</del></td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">行內程式碼</td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><code>`code`</code></td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><code>code</code></td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">連結</td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><code>[文字](URL)</code></td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><a>連結文字</a></td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">圖片</td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><code>![alt](URL)</code></td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">嵌入圖片</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">引用</td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><code>> 引用文字</code></td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">引用區塊</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">無序列表</td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><code>- 項目</code></td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">圓點列表</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">有序列表</td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><code>1. 項目</code></td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">編號列表</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">任務清單</td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><code>- [x] 完成</code></td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">核取方塊</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">表格</td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><code>| A | B |</code></td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">表格</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">分隔線</td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><code>---</code></td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">水平線</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">程式碼區塊</td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);"><code>```lang ... ```</code></td>
+              <td style="padding: 0.5rem 1rem; border-bottom: 1px solid var(--color-border);">語法高亮區塊</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 1rem;">跳脫</td>
+              <td style="padding: 0.5rem 1rem;"><code>\*</code></td>
+              <td style="padding: 0.5rem 1rem;">顯示特殊字元</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 總結 -->
+    <div class="reveal">
+      <h2>總結</h2>
+      <p>
+        Markdown 是 AI 時代最值得投資學習的書寫語言之一。它簡單、通用、強大 —— 無論你是寫筆記、寫文件、寫 Prompt、寫部落格，Markdown 都是你最好的選擇。
+      </p>
+      <p>
+        更重要的是，<strong>AI 工具的輸入和輸出幾乎都基於 Markdown</strong>。學會 Markdown，等於學會了如何更有效地和 AI 溝通。
+        在這個人人都在使用 AI 的時代，掌握 Markdown 就是掌握了人機協作的基本功。
+      </p>
+      <p><strong>現在就打開你的編輯器，開始用 Markdown 寫點什麼吧！</strong></p>
+    </div>
+
+    <div style="margin-top: 3rem;">
+      <a href="{{ '/blog' | relative_url }}" class="btn btn-outline">&larr; Back to Blog</a>
+    </div>
+  </div>
+</section>
